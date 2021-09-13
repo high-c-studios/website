@@ -1,0 +1,11 @@
+.first {
+	width: 100%;
+}
+
+.first > .door {
+	max-width:  300px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}

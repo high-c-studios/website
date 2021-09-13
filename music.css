@@ -1,0 +1,31 @@
+.first {
+	width: 80%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 70px;
+}
+
+.first > audio {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.first > p {
+	font-family: Poppins, monospace;
+	font-size: 10pt;
+	color:  white;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+/*-----------------------viewport-----------------------*/
+
+@media only screen and (min-width: 500px) {
+	.first {
+		margin-top: 50px;
+		width: 95%;
+	}
+}

@@ -1,0 +1,49 @@
+.first > .frame {
+	width:  75%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 33px;
+}
+
+@media only screen and (min-width: 600px){
+
+.first > .frame {
+	max-width: 250px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline;
+	vertical-align: middle;
+}
+
+.first {
+	width: 550px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+}
+
+@media only screen and (min-width: 800px){
+
+.first {
+	width: 700px;
+	text-align: center;
+}
+
+.first > .frame {
+	max-width: 160px;
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+.first {
+	width: 1000px;
+}
+
+.first > .frame {
+	max-width: 250px;
+}
+}

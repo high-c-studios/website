@@ -1,0 +1,57 @@
+body {
+	background-image: url(images/swirl.png);
+	background-repeat: none;
+	background-position: center center;
+	background-size: cover;
+	margin: 0 0 0 0;
+}
+
+.footer{
+	width: 100%;
+}
+
+.footer > .bar {
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.footer > .icon {
+	width: 100px;
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+.footer > p {
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 7pt;
+	font-weight: 100;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 33px;
+}
+
+/*-----------------------viewport-----------------------*/
+
+@media only screen and (min-width: 440px){
+	.footer > .bar {
+		display:  none;
+	}
+
+	.footer {
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+
+	}
+
+	.footer > .icon {
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,60 @@
+body {
+	background-image: url(images/swirl.png);
+	background-repeat: none;
+	background-position: center center;
+	background-size: cover;
+	margin: 0 0 0 0;
+}
+
+
+/*-----------------------SOCIAL-----------------------*/
+
+.social {
+	width: 300px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 33px;
+}
+
+.social > p {
+	font-family: 'Azeret Mono', monospace;
+	color: white;
+	font-size: 14pt;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 10px;
+	margin-bottom: 10px;
+}
+
+.social > p > .space {
+	opacity: 0;
+	font-size: 16pt;
+}
+
+.social > a > .mail{
+	width: 150px;
+	float: left;
+}
+
+.social > a > .icon {
+	width: 73px;
+}
+
+.social > .bar {
+	width: 100%;
+}
+
+/*-----------------------viewport-----------------------*/
+
+@media only screen and (min-width: 600px){
+	.social {
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.social > a> .mail, .social > a > .icon {
+		width: 75px;
+	}
+}
