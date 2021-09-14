@@ -21,6 +21,29 @@
 	letter-spacing: 3px;
 }
 
+.first > h1 {
+	font-family: Poppins, monospace;
+	font-size: 24pt;
+	color:  white;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 6px;
+}
+
+.first > h2 {
+	font-family: Azeret Mono, monospace;
+	font-size: 10pt;
+	color:  white;
+	text-align: left;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 25px;
+	margin-bottom: 50px;
+	max-width: 85%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 /*-----------------------viewport-----------------------*/
 
 @media only screen and (min-width: 500px) {
@@ -28,4 +51,16 @@
 		margin-top: 50px;
 		width: 95%;
 	}
+}
+
+
+@media only screen and (min-width: 800px) {
+.first > h1 {
+	font-size: 33pt;
+	letter-spacing: 10px;
+}
+
+.first > h2 {
+	width: 750px;
+}
 }

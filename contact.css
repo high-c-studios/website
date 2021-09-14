@@ -9,3 +9,19 @@
 	margin-left: auto;
 	margin-top: 30px;
 }
+
+.first > h1 {
+	font-family: Poppins, monospace;
+	font-size: 24pt;
+	color:  white;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 6px;
+}
+
+@media only screen and (min-width: 800px){
+	.first > h1 {
+	font-size: 33pt;
+	letter-spacing: 10px;
+}
+}

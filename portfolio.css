@@ -6,6 +6,15 @@
 	margin-bottom: 33px;
 }
 
+.first > h1 {
+	font-family: Poppins, monospace;
+	font-size: 24pt;
+	color:  white;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 6px;
+}
+
 @media only screen and (min-width: 600px){
 
 .first > .frame {
@@ -34,6 +43,12 @@
 
 .first > .frame {
 	max-width: 160px;
+
+}
+.first > h1 {
+	font-size: 33pt;
+	letter-spacing: 10px;
+}
 
 }
 
