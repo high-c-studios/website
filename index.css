@@ -1,199 +1,115 @@
-/*-----------------------FIRST-----------------------*/
+/* FONTS */
 
-.first {
-	width:  100%;
-	margin-top: 10px;
+@font-face {
+	font-family: "Bounded";
+	src: url(fonts/Bounded-Black.ttf) format("truetype");
 }
 
-.first > .bar {
-	max-width: 100%;
+/* PAGE STYLES */
+
+body {
+	background-image: url("images/mthood-bg.jpg");
+	background-color: #000000;
+	background-repeat: none;
+	background-position: center top;
+	background-size: cover;
+	margin: 0 0 0 0;
+}
+
+.content {
+	width: auto;
 	height: auto;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 33px;
-	margin-bottom: 50px;
+	position: fixed;
+  	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.first > p {
-	font-family: 'Azeret Mono', monospace;
-	color: white;
-	font-size: 12pt;
-	font-weight: 400;
-	max-width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 170%;
-	padding-left: 15px;
-}
-
-.first > .icon {
-	max-width: 40%;
-	height: auto;
-	display: block;
+.logo {
+	width: 85vw;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.first > .self {
-	max-width: 70%;
-	height: auto;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.line {
+.vertlogo {
 	display: none;
 }
 
 
-/*-----------------------SECOND-----------------------*/
-.second {
-	width:  100%;
-	padding-top: 33px;
-}
-
-.second > h1 {
-	font-family: 'Poppins', sans-serif;
-	color: white;
-	font-size: 18pt;
-	font-weight: 700;
-	text-align: center;
-	letter-spacing: 3px;
-	margin-top: 50px;
-}
-
-.second > p {
-	font-family: 'Azeret Mono', monospace;
-	color: white;
-	font-size: 10pt;
-	font-weight: 700;
-	max-width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 170%;
-	text-align: center;
-	letter-spacing: 1px;
-	margin-bottom: 50px;
-
-}
-
-.second > .bar {
-	max-width: 100%;
+.navbar {
+	width: 85vw;
 	height: auto;
-	display: block;
+	margin-top: 3%;
 	margin-right: auto;
 	margin-left: auto;
+	background-color: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
 }
 
-.second > .line {
-	display: none;
-}
-
-}
-/*-----------------------THIRD-----------------------*/
-
-.third {
-	width:  100%;
-	margin-top: 12px;
-}
-
-
-
-.third > .bar {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 3px;
-}
-
-/*-----------------------viewport-----------------------*/
-
-@media only screen and (min-width: 500px){
-
-.first > .line {
-	display: block;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 35px;
-	margin-bottom: 35px;
-}
-
-.first > p {
-	font-size: 14pt;
-}
-
-.first > .icon, .first > .self {
-	width: 150px;
-}
-
-.second > h1 {
-	font-size: 22pt;
-}
-
-.second > p {
-	font-size: 14pt;
-}
+.navbar > a {
+	color: #ffffff;
+	font-family: "Bounded";
+	font-size: clamp(1rem, 2.5vw, 3vw); /*(minimum,preferred,max)*/
+	text-decoration: none;
+	letter-spacing: .18em;
+	transition: color .3s;
 
 }
 
-@media only screen and (min-width: 710px) {
-	.first {
-		width: 650px;
-		display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
+.navbar > a:hover {
+	color: #cc0000;
 }
 
-@media only screen and (min-width: 900px){
-	.second > .bar {
+/*VIEWPORT VARIATIONS*/
+
+@media only screen and (max-width: 850px){
+
+	.logo {
 		display: none;
 	}
 
-	.second > .line {
+	.vertlogo {
 		display: block;
-		width: 40%;
-		margin-left: auto;
+		width: 40vw;
 		margin-right: auto;
+		margin-left: auto;
 	}
 
-}
+	.navbar {
+		width: 40vw;
+		display: block;
+		margin-top: 30px;
+	}
 
-@media only screen and (min-width: 1000px){
+	.navbar > a {
+		display: block;
+		text-align: center;
+		letter-spacing: 0;
+		line-height: 7vh;
+  	}
 
-.first > .line {
-	width: 300px;
-	margin-top: 55px;
-	margin-bottom: 45px;
-}
+  	.about {
+  		font-size: clamp(1rem, 8.6vw, 8.6vw); /*(minimum,preferred,max)*/
+  	}
 
-.second > .line {
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
+  	.memos {
+  		font-size: clamp(1rem, 7.7vw, 8.6vw); /*(minimum,preferred,max)*/
+  	}
 
-.second {
-	margin-bottom: 60px;
-}
+  	.gallery {
+  		font-size: clamp(1rem, 6.5vw, 8.6vw); /*(minimum,preferred,max)*/
+  	}
 
-.first {
-	width: 700px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.first > p {
-	font-size: 14pt;
-}
+  	.contact {
+  		font-size: clamp(1rem, 6.3vw, 8.6vw); /*(minimum,preferred,max)*/
+  	}
 
-.first > .icon, .first > .self {
-	width: 150px;
-}
+
+
+
+
+
 
 }

@@ -1,101 +1,187 @@
+/* FONTS */
+
+@font-face {
+	font-family: "Bounded-Black";
+	src: url(fonts/Bounded-Black.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Bounded-Reg";
+	src: url(fonts/Bounded-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Oldstyle";
+	src: url(fonts/MFBOldstyle-Regular.otf);
+}
+
 body {
-	background-image: url(images/swirl.png);
-	background-repeat: none;
-	background-position: center center;
-	background-size: cover;
-	margin: 0 0 0 0;
+	background-color: 000000;
 }
 
-/*-----------------------HEADER-----------------------*/
-
-.header {
+header {
 	width: 100%;
-	height:  150px;
-	display: inline;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.header > a > .logo {
-	max-width: 70%;
+.navlogo {
+	display: inline-flex;
+}
+
+.logo {
+	width: 200px;
+	display: inline-flex;
+	margin-left: 50px;
+}
+
+.vertlogo {
+	display: none;
+}
+
+.navlinks {
+	display: inline-flex;
+	margin-right: 50px;
+	
+}
+a {
+	color: #ffffff;
+	font-family: "Bounded-Black";
+	font-size: 18pt;
+	text-decoration: none;
+	vertical-align: top;
+	margin-top: 10px;
+	letter-spacing: 3px
+	transition: color .3s;
+}
+a:hover {
+	color: #cc0000;
+}
+
+@media only screen and (max-width: 1024px) {
+
+header, .navlogo, .logo, .navlinks {
+	display: block;
+}
+
+header {
+	max-width: 95%;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 50px;
-
+	padding-top: 20px;
 }
 
-/*-----------------------NAV BAR-----------------------*/
-
-.navbar {
-	width: 100%;
-	height: auto;
-	display: inline;
-	
+.navlogo {
+	width: 333px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.navbar > p {
-	font-family: 'Poppins', sans-serif;
-	color: white;
-	font-size: 10pt;
-	font-weight: 700;
+.logo {
+	width: 333px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navlinks {
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
+	margin-top: 33px;
+}
+
+.navlinks > a {
+	font-size: 18pt;
+}
 
 }
 
-a {
-	text-decoration: none;
-	color: white;
-}
+@media only screen and (max-width: 800px) {
 
-/*-----------------------DIVIDER-----------------------*/
-
-.divider > .bar{
-	width: 100%;
-}
-
-/*-----------------------viewport-----------------------*/
-
-@media only screen and (min-width: 440px) {
-
-.navbar > p {
-	font-size: 12pt;
-	margin-top: 30px;
-}
-}
-
-@media only screen and (min-width: 500px) {
-
-.navbar > p {
+.navlinks > a {
 	font-size: 14pt;
 }
 
-.divider > .bar{
-	display:  none;
-}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
 
-.navbar > p {
-	font-size: 14pt;
-	letter-spacing: 3px;
+header {
+	display: flex;
+	width: 333px;
 }
+
+.logo {
+	display: none;
 }
 
-@media only screen and (min-width: 800px) {
+.vertlogo {
+	display: inline-block;
+	width: 100px;
 
-.navbar > p {
+}
+
+.space {
+	display: none;
+}
+.navlinks {
+	display: inline-block;
+	margin-left: 33px;
+	margin-right: auto;
+	text-align: left;
+	margin-top: 0;
+}
+
+.navlinks > a {
+	font-size: 25pt;
+}
+
+}
+
+@media only screen and (max-width: 375px) {
+
+header {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.navlinks {
+	margin-left: 0;
+	padding-left: 10px;
+}
+
+.navlinks > a {
 	font-size: 20pt;
 }
+
+.vertlogo {
+	width: 85px;
 }
 
-@media only screen and (min-width: 1000px) {
-
-.navbar > p {
-	font-size: 20pt;
-	letter-spacing: 6px;
 }
-.header > a > .logo {
-	width: 720px;
+
+@media only screen and (max-width: 320px) {
+
+header {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.navlinks {
+	margin-left: 0;
+	padding-left: 10px;
+}
+
+.navlinks > a {
+	font-size: 18pt;
+}
+
+.vertlogo {
+	width: 75px;
 }
 
 }
