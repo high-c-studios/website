@@ -1,0 +1,123 @@
+
+
+.content {
+	width: 50%;
+	position: fixed;
+  	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+	
+
+}
+
+h1 {
+	color: #ffffff;
+	font-family: "Bounded-Black";
+	font-size: 50pt;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #ffffff;
+	font-family: "Bounded-Reg";
+	font-size: 12pt;
+	text-align: right;
+}
+
+p { 
+	color: #ffffff;
+	font-family: "Oldstyle";
+	font-size: 22pt;
+	line-height: 1.1;
+	font-weight: lighter;
+	text-align: justify;
+	text-justify: inter-character;
+ }
+
+hr {
+	color: #ffffff;
+	background-color: #ffffff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+.content {
+	width: 60%;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+.content {
+	width: 640px;
+	margin-top: 65px;
+}
+
+h1 {
+	font-size: 35pt;
+}
+
+p {
+	font-size: 20pt;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+.content {
+	width: 590px;
+}
+h1 {
+	font-size: 30pt;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.content {
+	width: 390px;
+}
+h1 {
+	font-size: 25pt;
+}
+h2 {
+	font-size: 12pt;
+}
+}
+
+@media only screen and (max-width: 420px) {
+.content {
+	width: 300px;
+}
+h1 {
+	font-size: 20pt;
+}
+p {
+	font-size: 18pt;
+	text-align: left;
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+.content {
+	width: 250px;
+	margin-top: 45px;
+}
+
+h1 {
+	font-size: 18pt;
+}
+p {
+	font-size: 16pt;
+}
+h2 {
+	text-align: center;
+	font-size: 10pt;
+}
+}
